@@ -43,17 +43,12 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-SELECT 
-    K0,
-    AVG(c12) AS 'avg(c12)'
-FROM 
-    tbl1
-WHERE 
-    c13 > 400
-GROUP BY 
-    K0
-ORDER BY 
-    K0;
+SELECT K0, CAST(ROUND(AVG(c12) * 100) AS INT) / 100.0 AS 'avg(c12)'
+FROM tbl1
+WHERE c13 > 400
+GROUP BY K0
+ORDER BY K0;
+
 
 
 
