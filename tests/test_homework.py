@@ -361,6 +361,7 @@ def test_13():
             4: 474.83,
         },
     }
+    print(result)
     assert result == expected
 
 def test_14():
@@ -384,3 +385,4 @@ def test_14():
         },
     }
     assert result == expected
+    
